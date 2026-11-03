@@ -3,6 +3,8 @@
 The official Aqinode link page: products, platforms, and a single signal line for
 what is currently in build.
 
+**Live:** [aqinode-links.vercel.app](https://aqinode-links.vercel.app)
+
 Built as a static React app with Vite. No backend, no UI framework, no icon
 package. Fonts are self-hosted Geist and Geist Mono.
 
@@ -31,12 +33,13 @@ pnpm preview
 - `src/styles.css` holds the design tokens, layout, and motion. The only
   saturated colours are the live and in-build status dots.
 
-## Before deploying
+## Deployment
 
-- Point `og:image` and `twitter:image` at an absolute URL for the deployed
-  domain. They currently use the relative `/og.png`.
-- Add a canonical URL once the final domain or path is known.
-- Optionally add the analytics provider script.
+The project is linked to the GitHub repository and deploys to production on every
+push to `main`. If the domain changes, update the canonical, `og:url`, and social
+image URLs in `index.html`.
+
+Optionally add the analytics provider script before deploying.
 
 ## Brand assets
 
